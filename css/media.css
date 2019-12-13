@@ -1,0 +1,154 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .brand a {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        top: 15px;
+    }
+
+    .brand a .brand-logo {
+        display: none;
+    }
+
+    .brand a .brand-name {
+        float: none;
+        text-align: center;
+        height: auto;
+    }
+
+    .brand-ads img {
+        width: 100%;
+    }
+
+    .slide-content {
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        width: 95%;
+    }
+
+    .slide-content h3 {
+        font-size: 30px;
+    }
+
+    .slide-content p {
+        max-width: inherit;
+    }
+
+    .slide-content br {
+
+        display: none;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .info-card {margin-bottom: 25px;}
+    .info-card h3{
+        font-size: 18px
+    }
+    .gallery-slider-item a i {
+        font-size: 30px;
+    }
+
+    .gallery-slider-item a i:hover {
+        font-size: 40px;
+    }
+
+    .side-bar {
+
+        margin-right: 0;
+        bottom: 0;
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%);
+        width: 95%;
+    }
+
+    .side-bar ul {
+        overflow: hidden;
+    }
+
+    .side-bar ul li {
+        float: left;
+        margin: 2px;
+    }
+
+    .side-bar ul li a {
+        margin: 0;
+        padding: 5px 10px 5px 0px;
+    }
+
+    .side-bar ul li a:hover {
+        left: 0;
+    }
+
+    .side-bar ul li a p{
+        margin-right: 5px;
+    }
+
+    .slider-nav {
+        display: none;
+    }
+
+    .latest-news-contant {
+        top: 0;
+        position: relative;
+        border: none;
+    }
+
+    .brand-logo {
+        display: none;
+    }
+
+    .police-super-info {
+        position: relative;
+    }
+
+    .py-video iframe {
+        width: 100%;
+        height: 300px
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .py-navbar-collapse {
+        height: 70vh;
+        overflow-y: auto;
+    }
+
+    .py-dropdown-menu {
+        width: 80%;
+        margin: auto;
+    }
+
+    .py-search-box-top {
+        position: relative;
+    }
+
+    .py-search-box {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .py-display-none {
+        display: none;
+    }
+
+    .next-dropdown {
+        position: relative;
+        left: 0 !important;
+    }
+}
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .py-btn {
+        padding: 20px 12px;
+    }
+}

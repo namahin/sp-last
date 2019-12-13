@@ -1,0 +1,105 @@
+.box-outer {}
+
+.main_box {
+	position: relative;
+	border: 5px solid #fff;
+	height: 100%;
+}
+
+.bar {
+	position: absolute;
+	width: 50px;
+	height: 5px;
+	background: #fff;
+	transition: all 1s cubic-bezier(0, 2.5, .07, 1);
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	border-radius: 15px;
+}
+
+.bar.delay {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+.top {
+	top: -5px;
+	left: -5px;
+	background: magenta;
+}
+
+.right-b {
+	top: 18px;
+	right: -28px;
+	transform: rotate(90deg);
+	background: red;
+}
+
+.bottom {
+	bottom: -5px;
+	left: -5px;
+	background: orangered;
+}
+
+.left-b {
+	top: 18px;
+	left: -28px;
+	transform: rotate(90deg);
+	background: #FFAE02;
+}
+
+@-webkit-keyframes h-move {
+	0% {
+		left: -5px;
+	}
+
+	100% {
+		left: 200px;
+	}
+}
+
+@keyframes h-move {
+	0% {
+		left: -5px;
+	}
+
+	100% {
+		left: 200px;
+	}
+}
+
+.top,
+.bottom {
+	-webkit-animation-name: h-move;
+	animation-name: h-move;
+}
+
+@-webkit-keyframes v-move {
+	0% {
+		top: -5px;
+	}
+
+	100% {
+		top: 228px;
+	}
+}
+
+@keyframes v-move {
+	0% {
+		top: -5px;
+	}
+
+	100% {
+		top: 228px;
+	}
+}
+
+.right-b,
+.left-b {
+	-webkit-animation-name: v-move;
+	animation-name: v-move;
+}
